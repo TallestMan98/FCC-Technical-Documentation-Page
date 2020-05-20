@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+  font-family: "Open sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 10px;
+  min-width: 290px;
+  text-align: justify;
+  color: #222;
+  background: #FFF;
+}
+body {
+  font-size: 1.5rem;
+}
+h1{
+  font-size: 2.8rem;
+  text-align: center;
+}
+#navbar {
+  position: fixed;
+  width: 300px;
+  min-width: 290px;
+  height: 100%;  
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar ul {
+  padding: 0;
+}
+#navbar li {
+  list-style: none;
+  border-bottom: solid 1px;
+  position: relative;
+  font-size: 1.6rem;
+}
+#top {
+  border-top: solid 1px;
+}
+#navbar a {
+  text-decoration: none;
+  color: #222;
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+  padding-left: 3rem;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+main{
+  margin: 0px 40px 20px 330px;
+  position: absolute;
+}
+main li {
+  padding: 7.5px 10px;
+}
+main a {
+  color: blue;
+}
+code{
+  display: block;
+  background-color: #eee;
+  padding: 10px 20px;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: solid 1px;
+  }
+  #navbar ul {
+    border-bottom: none;
+    max-height: 200px;
+  }
+  main {
+    margin: 270px 10px 5px 10px;
+    width:90%;
+    overflow-x: hidden;
+  }
+  code {
+    overflow-x: auto;
+  }
+  main li, #References {
+    text-align: left;
+  }
+}
